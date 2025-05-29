@@ -13,9 +13,10 @@ import static java.util.Arrays.asList;
 public class EmpacotamentoService {
 
     private final List<Caixa> caixasDisponiveis = asList(
-            new Caixa("Caixa 1", 30, 40, 80),
-            new Caixa("Caixa 2", 80, 50, 40),
-            new Caixa("Caixa 3", 50, 80, 60));
+            new Caixa("Caixa 1", new Dimensoes(30, 40, 80)),
+            new Caixa("Caixa 2", new Dimensoes(80, 50, 40)),
+            new Caixa("Caixa 3", new Dimensoes(50, 80, 60))
+    );
 
     public RespostaPedido empacotarPedidos(Pedido pedido) {
         var resposta = new RespostaPedido();

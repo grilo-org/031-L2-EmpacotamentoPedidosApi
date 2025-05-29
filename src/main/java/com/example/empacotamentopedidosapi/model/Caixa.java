@@ -7,7 +7,5 @@ import lombok.Data;
 @AllArgsConstructor
 public class Caixa {
     private String nome;
-    private int altura;
-    private int largura;
-    private int comprimento;
+    private Dimensoes dimensoes;
 }
